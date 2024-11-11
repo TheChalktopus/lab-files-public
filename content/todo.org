@@ -1,0 +1,15 @@
+* TODO [#A] Quantum Dynamics Pset                        :uchicago:lab:study:
+DEADLINE: <2024-11-15 Fri> SCHEDULED: <2024-11-04 Mon 21:00>
+:PROPERTIES:
+:ID:       48EC75A0-E22F-4914-8E63-BF675D3D6EBF
+:END:
+* TODO Rb Control System
+Add devices
+- [ ] AOM Driver
+- [ ]
+- [ ]
+* TODO Shutter Box Task
+
+
+* INPROG DeMille Lab onboarding                                :uchicago:lab:
+
