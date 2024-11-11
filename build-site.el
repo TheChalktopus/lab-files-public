@@ -34,8 +34,10 @@
              :with-creator t            ;; Include Emacs and Org versions in footer
              :with-toc t                ;; Include a table of contents
              :section-numbers nil       ;; Don't include section numbers
-             :time-stamp-file nil
-	     :auto-sitemap t)))    ;; Don't include time stamp in file
+             :time-stamp-file nil       ;; Don't include time stamp in file
+	     :auto-sitemap t
+	     :sitemap "index.org")           
+       ))   
 
 ;; Generate the site output
 (org-publish-all t)
