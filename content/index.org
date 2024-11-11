@@ -1,6 +1,5 @@
-#+TITLE: Sitemap for project org-site:main
+#+TITLE: Index
 
-- [[file:sitemap.org][Sitemap for project org-site:main]]
 - [[file:todo.org][todo]]
 - lab-files
   - [[file:lab-files/README.org][README]]

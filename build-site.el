@@ -36,7 +36,8 @@
              :section-numbers nil       ;; Don't include section numbers
              :time-stamp-file nil       ;; Don't include time stamp in file
 	     :auto-sitemap t
-	     :sitemap-filename "index.org")           
+	     :sitemap-filename "index.org"
+	     :sitemap-title   "Index")           
        ))   
 
 ;; Generate the site output
