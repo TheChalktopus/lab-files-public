@@ -1,0 +1,11 @@
+#+TITLE: Sitemap for project org-site:main
+
+- [[file:index.org][index]]
+- [[file:todo.org][todo]]
+- lab-files
+  - [[file:lab-files/README.org][README]]
+  - lab-journal
+    - [[file:lab-files/lab-journal/2024-11-04.org][2024-11-04]]
+    - [[file:lab-files/lab-journal/2024-11-07.org][2024-11-07]]
+    - [[file:lab-files/lab-journal/2024-11-10.org][2024-11-10]]
+    - [[file:lab-files/lab-journal/undated.org][Undated Entries]]
