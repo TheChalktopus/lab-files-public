@@ -6,3 +6,5 @@ Add devices
 * TODO Shutter Box Task
 
 
+* INPROG DeMille Lab onboarding                                :uchicago:lab:
+
