@@ -9,4 +9,5 @@
     - [[file:lab-files/lab-journal/2024-11-10.org][2024-11-10]]
     - [[file:lab-files/lab-journal/2024-11-13.org][2024-11-13]]
     - [[file:lab-files/lab-journal/2024-11-16.org][2024-11-16]]
+    - [[file:lab-files/lab-journal/2024-11-17.org][2024-11-17]]
     - [[file:lab-files/lab-journal/undated.org][Undated Entries]]
