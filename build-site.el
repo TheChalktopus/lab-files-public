@@ -41,7 +41,7 @@
        ))   
 ;; Generate todo list
 (require 'org-agenda)
-(setq org-agenda-files '("~/lab-files/"))
+(setq org-agenda-files '("~/lab-files/" "~/lab-files/lab-journal/"))
 (setq org-todo-keywords
       '((sequence "TODO(t)" "INPROG(i)" "NEXT(n)" "|" "DONE(d)" "CANCELLED(x)" )
 	(sequence  "CONSUME(c)" "|")
