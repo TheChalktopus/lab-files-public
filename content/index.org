@@ -10,6 +10,8 @@
     - [[file:lab-files/lab-journal/2024-11-13.org][2024-11-13]]
     - [[file:lab-files/lab-journal/2024-11-16.org][2024-11-16]]
     - [[file:lab-files/lab-journal/2024-11-19.org][2024-11-19]]
+    - [[file:lab-files/lab-journal/2024-11-20.org][2024-11-20]]
     - [[file:lab-files/lab-journal/undated.org][Undated Entries]]
   - shutter-box
     - [[file:lab-files/shutter-box/shutter-box.org][Shutter Box]]
+    - [[file:lab-files/shutter-box/bom.org][bom]]
