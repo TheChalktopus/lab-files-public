@@ -1,7 +1,7 @@
 * TODO Rb Control System
 Add devices
 - [ ] AOM Driver
-- [ ]
+- [ ] 
 - [ ]
 * TODO Shutter Box Task
 
@@ -14,4 +14,12 @@ Add devices
 
 * TODO Documentation for Shutter Box
 * INPROG DeMille Lab onboarding                                :uchicago:lab:
+:PROPERTIES:
+:ID:       059F06A4-E43B-4970-AD88-5475D42E2935
+:END:
+
+* TODO Machine shop paper work (in email from Pranav)                   :lab:
+:PROPERTIES:
+:ADDED: [2024-11-22]
+:END:
 
