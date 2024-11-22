@@ -3,9 +3,6 @@ Add devices
 - [ ] AOM Driver
 - [ ] 
 - [ ]
-* TODO Shutter Box Task
-
-
 * INPROG Send Purchase List in Discord
 
 * TODO Fix Box Design
