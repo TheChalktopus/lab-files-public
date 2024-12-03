@@ -4,6 +4,31 @@ Add devices
 - [ ] 
 - [ ]
 * TODO Documentation for Shutter Box
+:PROPERTIES:
+:ID:       B383DA13-3FAA-4CF1-861E-F317C1690AE8
+:END:
+* TODO Assemble Shutter Box
+:PROPERTIES:
+:ID:       235BC5EC-1440-4387-BF40-665CE765EA71
+:END:
+Run power from 5V
+Power switch off of same power from box.
+Run forward bias diode from Relay "DC+" to + side of the all the switches. Run other side of all the diodes to the + side of the isolating bnc port. Run the ground side of the isolating bnc to DC- on the relay. Run reverse bias diode from ground of isolating bnc to other side of isolating bnc.
+
+Solder small wires from isolating bnc on switch mount to switch in mount.
+
+Solder non-isolating BNCs ground together. Run wire from there to XM on relay.
+
+1. [ ]Cut short wire to connect + side of all the switches
+2. [ ]solder 4 wires together to connect ground of all the switches
+3. [ ] 
+4. [ ]solder all the non-isolating bncs
+5. [ ] solder all the isolating bncs for the box
+6. [ ]solder the reverse bias diodes to the isolating bncs for the box
+7. [ ]solder all the isolating bncs for the switches
+8. [ ]solder all the isolating bncs to the switches
+
+* TODO Get pulseblaster working? And all other associated things
 * TODO DeMille Lab onboarding                                  :uchicago:lab:
 :PROPERTIES:
 :ID:       059F06A4-E43B-4970-AD88-5475D42E2935
