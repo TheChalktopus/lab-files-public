@@ -17,6 +17,7 @@
     - [[file:lab-files/lab-journal/2024-12-01.org][2024-12-01]]
     - [[file:lab-files/lab-journal/2024-12-02.org][2024-12-02]]
     - [[file:lab-files/lab-journal/2024-12-03.org][2024-12-03]]
+    - [[file:lab-files/lab-journal/2024-12-04.org][2024-12-04]]
     - [[file:lab-files/lab-journal/undated.org][Undated Entries]]
   - pulseblaster-control
     - [[file:lab-files/pulseblaster-control/pulseblaster-control.org][Pulseblaster Control]]

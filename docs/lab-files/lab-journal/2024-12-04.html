@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2024-12-04</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">2024-12-04</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org44a461d">GUI Devices</a></li>
+<li><a href="#orgfd731ce">Group Meeting</a></li>
+<li><a href="#org96dcdd6">Misc</a>
+<ul>
+<li><a href="#org5653515">RGA</a></li>
+</ul>
+</li>
+<li><a href="#orge400ff3">Journal Club: Servo 101</a>
+<ul>
+<li><a href="#org145913f">PID</a></li>
+<li><a href="#orgc57fdbc">Tuning PID Parameters</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org44a461d" class="outline-2">
+<h2 id="org44a461d">GUI Devices</h2>
+</div>
+<div id="outline-container-orgfd731ce" class="outline-2">
+<h2 id="orgfd731ce">Group Meeting</h2>
+</div>
+<div id="outline-container-org96dcdd6" class="outline-2">
+<h2 id="org96dcdd6">Misc</h2>
+<div class="outline-text-2" id="text-org96dcdd6">
+</div>
+<div id="outline-container-org5653515" class="outline-3">
+<h3 id="org5653515">RGA</h3>
+<div class="outline-text-3" id="text-org5653515">
+<p>
+Reduced Gas analyzer, mass spectrometer. Shows us whats in the vacuum chamber. 4:1 ratio of N2 to O2 is 
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge400ff3" class="outline-2">
+<h2 id="orge400ff3">Journal Club: Servo 101</h2>
+<div class="outline-text-2" id="text-orge400ff3">
+<p>
+System (x y z) -&gt; Discriminator (turns system variable into voltage V) -&gt;
+Examples Laser Intensity and Photodiode, Temperature and
+We also have some gain&#x2026;
+</p>
+
+<p>
+Servo
+<img src="./figures/servo101-1.svg" alt="servo101-1.svg" class="org-svg" />
+</p>
+</div>
+
+<div id="outline-container-org145913f" class="outline-3">
+<h3 id="org145913f">PID</h3>
+<div class="outline-text-3" id="text-org145913f">
+<p>
+\[V_\text{corr} = k_p V_\text{err} (t) + k_i \int_0^t V_\text{err}(t) dt + k_d \diff{V_err}{t}\]
+\[V_\text{corr} = k_p V_\text{err} (t) + 1/T_i \int_0^t V_\text{err}(t) dt + 1/T_d \diff{V_err}{t}\]
+i term: past errors
+p term: present errors
+d term: future errors
+</p>
+
+
+<p>
+What are we trying to control
+</p>
+<ol class="org-ol">
+<li>Rise time</li>
+<li>Overshoot</li>
+<li>Settling time</li>
+<li>Steady State Error &lt;- We care most about this one</li>
+</ol>
+
+<p>
+Table in notes talking about how each of these four change with each of the PID controls.
+</p>
+
+<p>
+Take Fourier transformation of \(\tilde V_\text{err}(f)\) find that I propto V<sub>err</sub>(f)/f D propto f V<sub>err</sub>. So you can make a plot like this:
+</p>
+
+
+<p>
+what this says is you can collect V<sub>\text</sub>{err} over time. Take fourier transform and see what kind of frequencies you have. Then that gives you an idea of what your parameters out to be (lots of high frequencies means more D etc.)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc57fdbc" class="outline-3">
+<h3 id="orgc57fdbc">Tuning PID Parameters</h3>
+<div class="outline-text-3" id="text-orgc57fdbc">
+<p>
+Ziegler Nichols Method
+</p>
+<ol class="org-ol">
+<li><p>
+Step Response
+</p>
+<ul class="org-ul">
+<li>Slow system variable, apply step response</li>
+<li>Parameters L, T</li>
+<li>Look at inflection point. Draw tangent line</li>
+</ul>
+
+<div id="org1860555" class="figure">
+<p><img src="./figures/servo101-3.png" alt="servo101-3.png" />
+</p>
+</div></li>
+</ol>
+
+
+<ol class="org-ol">
+<li><p>
+Fast Oscillation Method
+</p>
+<ul class="org-ul">
+<li>Increase K<sub>p</sub> until servo oscillations</li>
+<li>Parameters K<sub>\text</sub>{crit}, P<sub>\text</sub>{crit}</li>
+</ul>
+
+<div id="orgfcc9517" class="figure">
+<p><img src="./figures/servo101-4.png" alt="servo101-4.png" />
+</p>
+</div></li>
+</ol>
+
+
+
+
+<p>
+Dave comment from group meeting: Kramer-Kronig, think about phase shifts
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.6.15)</p>
+</div>
+</body>
+</html>
