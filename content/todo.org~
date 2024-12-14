@@ -19,15 +19,24 @@ Solder small wires from isolating bnc on switch mount to switch in mount.
 
 Solder non-isolating BNCs ground together. Run wire from there to XM on relay.
 
-1. [ ]Cut short wire to connect + side of all the switches
-2. [ ]solder 4 wires together to connect ground of all the switches
-3. [ ] 
-4. [ ]solder all the non-isolating bncs
-5. [ ] solder all the isolating bncs for the box
-6. [ ]solder the reverse bias diodes to the isolating bncs for the box
-7. [ ]solder all the isolating bncs for the switches
-8. [ ]solder all the isolating bncs to the switches
+Circuit Stuff
+1. [ ] Cut wire
+   1. [ ] 4 short wire to connect + side of all the switches
+   2. [ ] 4 long green wire to connect ground of all switches (off of isolating bnc)
+   3. [ ] 4 long red wire for nonisolating bnc
+   4. [ ] 4 long green wire for nonisolating bnc
+   5. [ ] 4 short green wire to connect ground of all relay channels
+2. [ ] Solder BNC panel mounts
+3. [ ] Solder wire together
+   1. [ ] solder 4 green wires from nonisolating BNC together to connect ground of all the switches.
+   2. [ ] solder
+4. [ ] Diodes
+   1. [ ] Solder reverse bias diode from switch output to isolating BNC ground for each switch.
+   2. [ ] Add forward bias diode from banana connector to DC+
+5. [ ] Assembly
+   1. [ ]
 
+Assembly of Box      
 * TODO Get pulseblaster working? And all other associated things
 * TODO DeMille Lab onboarding                                  :uchicago:lab:
 :PROPERTIES:

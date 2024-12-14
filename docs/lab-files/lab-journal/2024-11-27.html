@@ -16,25 +16,25 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5ace23e">FrAg Collaboration Meeting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="meeting_notes">meeting_notes</span></span></a>
+<li><a href="#org40b434a">FrAg Collaboration Meeting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="meeting_notes">meeting_notes</span></span></a>
 <ul>
-<li><a href="#orgf7ae80e">PPLN Crystals for SFG</a></li>
-<li><a href="#org3752565">Intensity lock ODT laser</a></li>
-<li><a href="#org6b4ee08">RF Driver</a></li>
-<li><a href="#orgf99a957">PCB Details</a></li>
-<li><a href="#org791192b">10 MHz clock reference</a></li>
+<li><a href="#org6f32ece">PPLN Crystals for SFG</a></li>
+<li><a href="#org12146c8">Intensity lock ODT laser</a></li>
+<li><a href="#orgd780a0e">RF Driver</a></li>
+<li><a href="#org0c17ad7">PCB Details</a></li>
+<li><a href="#orgbe9ef39">10 MHz clock reference</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5ace23e" class="outline-2">
-<h2 id="org5ace23e">FrAg Collaboration Meeting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="meeting_notes">meeting_notes</span></span></h2>
-<div class="outline-text-2" id="text-org5ace23e">
+<div id="outline-container-org40b434a" class="outline-2">
+<h2 id="org40b434a">FrAg Collaboration Meeting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="meeting_notes">meeting_notes</span></span></h2>
+<div class="outline-text-2" id="text-org40b434a">
 </div>
-<div id="outline-container-orgf7ae80e" class="outline-3">
-<h3 id="orgf7ae80e">PPLN Crystals for SFG</h3>
-<div class="outline-text-3" id="text-orgf7ae80e">
+<div id="outline-container-org6f32ece" class="outline-3">
+<h3 id="org6f32ece">PPLN Crystals for SFG</h3>
+<div class="outline-text-3" id="text-org6f32ece">
 <p>
 Need crystal to make 448 nm for STIRAP down leg
 up led is 1028 nm
@@ -47,9 +47,9 @@ Device Specifiction MSFG421-0.5-40
 </div>
 
 
-<div id="outline-container-org3752565" class="outline-3">
-<h3 id="org3752565">Intensity lock ODT laser</h3>
-<div class="outline-text-3" id="text-org3752565">
+<div id="outline-container-org12146c8" class="outline-3">
+<h3 id="org12146c8">Intensity lock ODT laser</h3>
+<div class="outline-text-3" id="text-org12146c8">
 <p>
 Basic Scheme
 Two PDA 36A2 (50 Ohm) "high" and "low" power. Sum to PID. Servo on RF amplitude for 80 MHz AOM.
@@ -63,9 +63,9 @@ Why not red pitaya? Bit depth.
 </div>
 </div>
 
-<div id="outline-container-org6b4ee08" class="outline-3">
-<h3 id="org6b4ee08">RF Driver</h3>
-<div class="outline-text-3" id="text-org6b4ee08">
+<div id="outline-container-orgd780a0e" class="outline-3">
+<h3 id="orgd780a0e">RF Driver</h3>
+<div class="outline-text-3" id="text-orgd780a0e">
 <p>
 Minicircuits RF switch ZSW2-272HDR+
 O buy 552-F07-X
@@ -73,9 +73,9 @@ O buy 552-F07-X
 </div>
 </div>
 
-<div id="outline-container-orgf99a957" class="outline-3">
-<h3 id="orgf99a957">PCB Details</h3>
-<div class="outline-text-3" id="text-orgf99a957">
+<div id="outline-container-org0c17ad7" class="outline-3">
+<h3 id="org0c17ad7">PCB Details</h3>
+<div class="outline-text-3" id="text-org0c17ad7">
 <p>
 NE5532P dual op amp (same as buffer circuit)
 First op amp will sum with gain of -1. Second op amp will invert
@@ -84,9 +84,9 @@ Use zener diodes for over-voltage protection OR voltage ref + diode clamp.
 </div>
 </div>
 
-<div id="outline-container-org791192b" class="outline-3">
-<h3 id="org791192b">10 MHz clock reference</h3>
-<div class="outline-text-3" id="text-org791192b">
+<div id="outline-container-orgbe9ef39" class="outline-3">
+<h3 id="orgbe9ef39">10 MHz clock reference</h3>
+<div class="outline-text-3" id="text-orgbe9ef39">
 <p>
 Need 10 MHz clock to sync instruments (critical: pulse blaster + NI DAC)
 Long term solutions share SRS GPS clock with CeNTREX

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2024-12-12</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">2024-12-12</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org50e3049">Journal Club: Transmission Lines Part I</a>
+<ul>
+<li><a href="#org510f424">Broad Definition of Transmission Line</a></li>
+<li><a href="#org7780434">V/I relations</a></li>
+<li><a href="#orgea9e352">Impedance</a>
+<ul>
+<li><a href="#org841fcd7">Apply Kirchoff's Laws</a></li>
+<li><a href="#org97bfef2">Result: Telegrapher's equations</a></li>
+<li><a href="#orgf23ec9c">Lossless Line</a></li>
+<li><a href="#orgf326c3f">Low-loss Line ie. a real line (we have losses in real life)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org0cce9d0">Misc</a>
+<ul>
+<li><a href="#orgf8c6e45">Random things I heard that I want to look up later</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org50e3049" class="outline-2">
+<h2 id="org50e3049">Journal Club: Transmission Lines Part I</h2>
+<div class="outline-text-2" id="text-org50e3049">
+<p>
+How signals move in BNCs for example, impedance matching, Smith Chart
+</p>
+</div>
+
+<div id="outline-container-org510f424" class="outline-3">
+<h3 id="org510f424">Broad Definition of Transmission Line</h3>
+<div class="outline-text-3" id="text-org510f424">
+<p>
+Some signal path (voltage V or current  I) of a conductor and its return path
+</p>
+
+<p>
+\def\svgwidth{0.7\textwidth}
+\input{./figures/logic-soln.pdf_tex}
+</p>
+
+
+<p>
+\def\svgwidth{0.7\textwidth}
+\input{./figures/transmissionlinesI-2.pdf_tex}
+</p>
+</div>
+</div>
+<div id="outline-container-org7780434" class="outline-3">
+<h3 id="org7780434">V/I relations</h3>
+<div class="outline-text-3" id="text-org7780434">
+<p>
+c = Q/V and I = dQ/dt = c dV/dt
+L = &Phi;<sub>B</sub>/I, Faraday's law\grad &times; \vec E = -\pdiff{B}{t}
+EMF: &epsilon; = &int; \vec E d\vec l = -\pdiff{}{B} &int; B &sdot; A = - \pdiff{\phi_B}{t} =&gt; V<sub>L</sub> = \pdiff{\phi_B}{t} = L \pdiff{I}{t}
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgea9e352" class="outline-3">
+<h3 id="orgea9e352">Impedance</h3>
+<div class="outline-text-3" id="text-orgea9e352">
+<p>
+Z = V/I
+V = V<sub>0</sub> cos(&omega; t + &phi;) = V<sub>0</sub> e<sup>i&phi;</sup>e<sup>i&omega; t</sup> = ~ V e<sup>i&omega; t</sup>
+Take real part at the end.
+</p>
+
+<p>
+I<sub>C</sub> = C i &omega; ~ V e<sup>i&omega; t</sup>
+Z = ~  e<sup>i &omega; t</sup>/(c j &omega; ~ V e<sup>i&omega; t</sup>) = 1/(i &omega; C)
+V<sub>L</sub> = L \pdiff{I}{t}, I = I ~ e<sup>i&omega; t</sup>, L \pdiff{I}{t} = i &omega; L ~ I e<sup>i&omega; t</sup> =&gt; Z = i &omega; L ~ I e<sup>i&omega; t</sup>/(~ I e<sup>i&omega; t</sup>)
+</p>
+
+<p>
+Simple model of impedance line
+</p>
+
+<p>
+I(x), V(x) +-----&#x2013;&#x2014;R'dx &#x2014; L'dx --------&#x2013;&#x2014; + V(x + dx),  I(x + dx)
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<tbody>
+<tr>
+</tr>
+</tbody>
+<tbody>
+<tr>
+</tr>
+</tbody>
+<tbody>
+<tr>
+</tr>
+</tbody>
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+<p>
+Gdx  =
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<tbody>
+<tr>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li><p>
+Ground------------------------------------&#x2013;&#x2014; -
+</p>
+
+<p>
+G = conductance = 1/R
+</p></li>
+</ul>
+</div>
+
+<div id="outline-container-org841fcd7" class="outline-4">
+<h4 id="org841fcd7">Apply Kirchoff's Laws</h4>
+<div class="outline-text-4" id="text-org841fcd7">
+<p>
+Voltage
+V(x) = R'dx I(x) + i &omega; L' dx I(x) + V(x + dx) -&gt; [V(x + dx) - V(x)]/dx = \diff{V}{x} = -(R' + i &omega; L)I(&omega;)
+</p>
+
+<p>
+Current
+I(x) = I(x + dx) + V(x + dx)[i &omega; C' dx] -&gt; [I(x + dx) - I(x)]dx = -V(x)[G' + i &omega; C']
+</p>
+</div>
+</div>
+<div id="outline-container-org97bfef2" class="outline-4">
+<h4 id="org97bfef2">Result: Telegrapher's equations</h4>
+<div class="outline-text-4" id="text-org97bfef2">
+<p>
+\pdiff{V}{x} = -(R' + i &omega; L')I, \pdiff{I}{x} = -(G' + j&omega; C')V
+</p>
+
+
+<p>
+Coupled diffy Q's:
+\pdiff{^2V}{x^2} = -(R' + i &omega; L')\pdiff{I}{x} = (R' + i &omega; L')(G' + i &omega; L') V
+&gamma; = \sqrt{(R' + i \omega L')(G' + i \omega C')}
+&gamma; called "Complex Propagation constant"
+\pdiff{^2 V}{x^2} = &gamma;<sup>2</sup> V
+\pdiff{^2 I}{x^2} = &gamma;<sup>2</sup> I
+</p>
+
+<p>
+Solve these diffy Q's
+V(x) = V<sub>0</sub>^+ e<sup>-&gamma; x</sup> + V<sub>0</sub><sup>-e</sup><sup>-&gamma; x</sup>
+I(x) = I<sub>0</sub>^+ e<sup>-&gamma; x</sup> + I<sub>0</sub><sup>-e</sup><sup>-&gamma; x</sup>
+Waves! (Recall &gamma; is complex)
+</p>
+
+<p>
+\pdiff{V}{x} = -(R' + i &omega; L')I(x) = -&gamma; V<sub>0</sub><sup>+e</sup><sup>-&gamma; x</sup> + &gamma; V<sub>0</sub><sup>-e</sup><sup>&gamma; x</sup>
+Pull out a common factor of &gamma; I(x) = &gamma;/(R' + i &omega; L') [V<sub>0</sub>^+ e<sup>-&gamma; x</sup> - V<sub>0e</sub><sup>-&gamma; x</sup>]
+</p>
+
+<p>
+&gamma;/(R' + i &omega; L') is our admittance or 1/Impedance Z. "Characteristic Impedance" Z<sub>0</sub> = (R' + i &omega; L')/&gamma; = \sqrt{\frac{R' + i \omega L}{G' + i \omega L}}
+NB: This relates V<sub>0</sub>^+ and I<sub>0</sub>^+
+</p>
+
+<p>
+V(x) = V<sub>0</sub>^+ e<sup>-&gamma;</sup> x + V<sub>0</sub>^- e^&gamma; x
+I(x) = \frac{1}{Z_0}(V<sub>0</sub>^+ e<sup>-&gamma; x</sup> - V<sub>0</sub>^- e<sup>&gamma; x</sup>)
+</p>
+
+<p>
+&gamma; = &alpha; + i &beta;
+&alpha; -&gt; "Attenuation constant" (decay!)
+&beta; -&gt; "phase constant"
+^ see these in a datasheet
+</p>
+</div>
+</div>
+<div id="outline-container-orgf23ec9c" class="outline-4">
+<h4 id="orgf23ec9c">Lossless Line</h4>
+<div class="outline-text-4" id="text-orgf23ec9c">
+<ol class="org-ol">
+<li><p>
+Lossless line R = G = 0 -&gt; &gamma; = i&omega; \sqrt{L'C'} &alpha; = 0 &beta; = &omega; \sqrt{L'C'} Z<sub>0</sub>  = \sqrt{L_0/C_0}
+</p>
+
+<p>
+V(t) = Re[~ V e<sup>i&omega; t</sup>] = V<sub>0</sub>^+ cos(&omega; t - &beta; x)
+time delay t<sub>d</sub> = &beta;/&omega; x = x/v<sub>&phi;</sub>
+So phase velocity
+v<sub>&phi;</sub> = &omega;/&beta; = 1/\sqrt{L'C'}
+</p>
+
+<p>
+So now we work out C, capacitance (not capacitance per length) and L (inductance but not per length)
+</p></li>
+</ol>
+<p>
+New model both an inductor and a capacitor (which we get by considering infinite things, ignoring edge effects etc&#x2026;.)
+    w |___|
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">d</td>
+</tr>
+
+<tr>
+<td class="org-left"><span class="underline">_</span></td>
+</tr>
+</tbody>
+</table>
+<p>
+   l
+C = &epsilon;<sub>0</sub> A/d = &epsilon; wl/d -&gt; C' = &epsilon; w/d
+L = &phi;<sub>B</sub>/I = BA/I = B d &times; l/I, Then I = Bw/&mu;<sub>0</sub> (this is from Ampere's law) then L' = &mu;<sub>0</sub> d/&omega;
+</p>
+
+
+<p>
+v<sub>&phi;</sub> = 1/\sqrt{L'C'} = 1/\sqrt{\epsilon w/d \mu_0 d/w} = 1/\sqrt{\epsilon_0 \mu_0} = c
+</p>
+
+<p>
+In BNC not in vacuum we have some material with a dielectric constant. It is PTFE, for leakage purposes? For impedance engineering? Turns out speed is like 2/3 c.
+</p>
+
+<p>
+We also have Z<sub>0</sub> = \sqrt{L'/ C'} = \sqrt{\mu_0/\epsilon_0} d/w
+</p>
+
+<p>
+E = V/d and Hw = I
+E/H = V/I w/d = Z<sub>0</sub> w/d = \sqrt{\mu_0/\epsilon_0} = &eta;<sub>0</sub> "Intrinsic Impedance of Free Space"
+&eta;<sub>0</sub> = 120 &pi; Ohms
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf326c3f" class="outline-4">
+<h4 id="orgf326c3f">Low-loss Line ie. a real line (we have losses in real life)</h4>
+<div class="outline-text-4" id="text-orgf326c3f">
+<p>
+R &Lt; &omega; L
+G &Lt; &omega; C
+</p>
+
+<p>
+Rederive important steps. Find phase constant and attenuation constant, &beta; and &alpha;
+</p>
+
+<p>
+To first order:
+\[\gamma = i \omega \sqrt{L'C'}(1 - i R'/ (\omega L'))^(1/2)(1 - i G'/(\omega C'))^(1/2)\]
+\[\gamma = i \omega \sqrt{L'C'}(1 - i R'/(2\omega L') - i G'/(2\omega C') - \mathcal{O}(R'^2))\]
+\[\alpha = \frac{1}{2} R' \sqrt{\frac{C'}{L'}} + G'\sqrt{\frac{C'}{L'}}\]
+\[\beta = \omega \sqrt{L'C'}\]
+Still travel at \(c\)(!)
+</p>
+
+<p>
+Characteristic impedance
+Z<sub>0</sub> = \sqrt{R' + i \omega L'}/\sqrt{G' + i \omega C'} = \sqrt{L'/C'} to <b>zeroeth</b> order
+</p>
+
+
+<p>
+Can then rewrite \(\alpha = \frac12 (R'/Z_0 + G' Z_0)\). Attenuation!
+</p>
+
+
+<p>
+Next time: Impedance matching
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0cce9d0" class="outline-2">
+<h2 id="org0cce9d0">Misc</h2>
+<div class="outline-text-2" id="text-org0cce9d0">
+</div>
+<div id="outline-container-orgf8c6e45" class="outline-3">
+<h3 id="orgf8c6e45">Random things I heard that I want to look up later</h3>
+<div class="outline-text-3" id="text-orgf8c6e45">
+<p>
+Double Stub Tuner
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.6.15)</p>
+</div>
+</body>
+</html>

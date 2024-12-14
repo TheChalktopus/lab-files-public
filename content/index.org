@@ -18,9 +18,18 @@
     - [[file:lab-files/lab-journal/2024-12-02.org][2024-12-02]]
     - [[file:lab-files/lab-journal/2024-12-03.org][2024-12-03]]
     - [[file:lab-files/lab-journal/2024-12-04.org][2024-12-04]]
+    - [[file:lab-files/lab-journal/2024-12-06.org][2024-12-06]]
+    - [[file:lab-files/lab-journal/2024-12-08.org][2024-12-08]]
+    - [[file:lab-files/lab-journal/2024-12-09.org][2024-12-09]]
+    - [[file:lab-files/lab-journal/2024-12-10.org][2024-12-10]]
+    - [[file:lab-files/lab-journal/2024-12-11.org][2024-12-11]]
+    - [[file:lab-files/lab-journal/2024-12-12.org][2024-12-12]]
+    - [[file:lab-files/lab-journal/2024-12-13.org][2024-12-13]]
     - [[file:lab-files/lab-journal/undated.org][Undated Entries]]
   - pulseblaster-control
     - [[file:lab-files/pulseblaster-control/pulseblaster-control.org][Pulseblaster Control]]
   - shutter-box
     - [[file:lab-files/shutter-box/bom.org][Bill of Materials]]
     - [[file:lab-files/shutter-box/shutter-box.org][Shutter Box]]
+    - Shutter-Box
+      - [[file:lab-files/shutter-box/Shutter-Box/README.org][Shutter Box]]

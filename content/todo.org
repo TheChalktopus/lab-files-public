@@ -1,13 +1,17 @@
 * TODO Rb Control System
-Add devices
-- [ ] AOM Driver
-- [ ] 
-- [ ]
+Add devices, device drivers and gui devices
+- [ ] AOM Driver (Grace did this)
+  - [ ] GUI Device
+- [ ] CAEN Power supply (Grace did this)
+  - [ ] GUI Device
+- [ ] Current Supplies? (BKPrecision drivers work here)
+  - [ ] GUI Device (BKPrecision Supplies??)
+
 * TODO Documentation for Shutter Box
 :PROPERTIES:
 :ID:       B383DA13-3FAA-4CF1-861E-F317C1690AE8
 :END:
-* TODO Assemble Shutter Box
+* INPROG Assemble Shutter Box
 :PROPERTIES:
 :ID:       235BC5EC-1440-4387-BF40-665CE765EA71
 :END:
@@ -34,12 +38,26 @@ Circuit Stuff
    1. [ ] Solder reverse bias diode from switch output to isolating BNC ground for each switch.
    2. [ ] Add forward bias diode from banana connector to DC+
 5. [ ] Assembly
-   1. [ ]
 
 Assembly of Box      
-* TODO Get pulseblaster working? And all other associated things
-* TODO DeMille Lab onboarding                                  :uchicago:lab:
+* NEXT Ask Mohit about current supplies
+
+* INPROG DeMille Lab onboarding                                :uchicago:lab:
 :PROPERTIES:
 :ID:       059F06A4-E43B-4970-AD88-5475D42E2935
 :END:
 
+* NEXT Machine Shop Training Paper work                                 :lab:
+SCHEDULED: <2025-01-08 Wed>
+:PROPERTIES:
+:ADDED: [2024-11-18]
+:END:
+In email from Pranav
+* INPROG Quantum Dynamics Notes + Readings                     :uchicago:lab:
+DEADLINE: <2025-01-06 Mon>
+:PROPERTIES:
+:ADDED: [2024-12-03]
+:END:
+
+* NEXT [#F] MCAW Recap
+Do this at some point

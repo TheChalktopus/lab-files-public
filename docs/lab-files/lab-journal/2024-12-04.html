@@ -48,46 +48,49 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org44a461d">GUI Devices</a></li>
-<li><a href="#orgfd731ce">Group Meeting</a></li>
-<li><a href="#org96dcdd6">Misc</a>
+<li><a href="#org4703d05">GUI Devices</a></li>
+<li><a href="#org9c4fd8c">Group Meeting</a></li>
+<li><a href="#org40fd4cf">Misc</a>
 <ul>
-<li><a href="#org5653515">RGA</a></li>
+<li><a href="#org5c56c55">RGA</a></li>
+<li><a href="#org6736233">Turning on the 780 seed laser</a></li>
 </ul>
 </li>
-<li><a href="#orge400ff3">Journal Club: Servo 101</a>
+<li><a href="#org2d20d98">Journal Club: Servo 101</a>
 <ul>
-<li><a href="#org145913f">PID</a></li>
-<li><a href="#orgc57fdbc">Tuning PID Parameters</a></li>
+<li><a href="#orgeae2907">PID</a></li>
+<li><a href="#org68271c6">Tuning PID Parameters</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org44a461d" class="outline-2">
-<h2 id="org44a461d">GUI Devices</h2>
+<div id="outline-container-org4703d05" class="outline-2">
+<h2 id="org4703d05">GUI Devices</h2>
 </div>
-<div id="outline-container-orgfd731ce" class="outline-2">
-<h2 id="orgfd731ce">Group Meeting</h2>
+<div id="outline-container-org9c4fd8c" class="outline-2">
+<h2 id="org9c4fd8c">Group Meeting</h2>
 </div>
-<div id="outline-container-org96dcdd6" class="outline-2">
-<h2 id="org96dcdd6">Misc</h2>
-<div class="outline-text-2" id="text-org96dcdd6">
+<div id="outline-container-org40fd4cf" class="outline-2">
+<h2 id="org40fd4cf">Misc</h2>
+<div class="outline-text-2" id="text-org40fd4cf">
 </div>
-<div id="outline-container-org5653515" class="outline-3">
-<h3 id="org5653515">RGA</h3>
-<div class="outline-text-3" id="text-org5653515">
+<div id="outline-container-org5c56c55" class="outline-3">
+<h3 id="org5c56c55">RGA</h3>
+<div class="outline-text-3" id="text-org5c56c55">
 <p>
 Reduced Gas analyzer, mass spectrometer. Shows us whats in the vacuum chamber. 4:1 ratio of N2 to O2 is 
 </p>
 </div>
 </div>
+<div id="outline-container-org6736233" class="outline-3">
+<h3 id="org6736233">Turning on the 780 seed laser</h3>
+</div>
 </div>
 
-
-<div id="outline-container-orge400ff3" class="outline-2">
-<h2 id="orge400ff3">Journal Club: Servo 101</h2>
-<div class="outline-text-2" id="text-orge400ff3">
+<div id="outline-container-org2d20d98" class="outline-2">
+<h2 id="org2d20d98">Journal Club: Servo 101</h2>
+<div class="outline-text-2" id="text-org2d20d98">
 <p>
 System (x y z) -&gt; Discriminator (turns system variable into voltage V) -&gt;
 Examples Laser Intensity and Photodiode, Temperature and
@@ -100,9 +103,9 @@ Servo
 </p>
 </div>
 
-<div id="outline-container-org145913f" class="outline-3">
-<h3 id="org145913f">PID</h3>
-<div class="outline-text-3" id="text-org145913f">
+<div id="outline-container-orgeae2907" class="outline-3">
+<h3 id="orgeae2907">PID</h3>
+<div class="outline-text-3" id="text-orgeae2907">
 <p>
 \[V_\text{corr} = k_p V_\text{err} (t) + k_i \int_0^t V_\text{err}(t) dt + k_d \diff{V_err}{t}\]
 \[V_\text{corr} = k_p V_\text{err} (t) + 1/T_i \int_0^t V_\text{err}(t) dt + 1/T_d \diff{V_err}{t}\]
@@ -137,9 +140,9 @@ what this says is you can collect V<sub>\text</sub>{err} over time. Take fourier
 </div>
 </div>
 
-<div id="outline-container-orgc57fdbc" class="outline-3">
-<h3 id="orgc57fdbc">Tuning PID Parameters</h3>
-<div class="outline-text-3" id="text-orgc57fdbc">
+<div id="outline-container-org68271c6" class="outline-3">
+<h3 id="org68271c6">Tuning PID Parameters</h3>
+<div class="outline-text-3" id="text-org68271c6">
 <p>
 Ziegler Nichols Method
 </p>
@@ -153,7 +156,7 @@ Step Response
 <li>Look at inflection point. Draw tangent line</li>
 </ul>
 
-<div id="org1860555" class="figure">
+<div id="orgf7f9981" class="figure">
 <p><img src="./figures/servo101-3.png" alt="servo101-3.png" />
 </p>
 </div></li>
@@ -169,7 +172,7 @@ Fast Oscillation Method
 <li>Parameters K<sub>\text</sub>{crit}, P<sub>\text</sub>{crit}</li>
 </ul>
 
-<div id="orgfcc9517" class="figure">
+<div id="org610f835" class="figure">
 <p><img src="./figures/servo101-4.png" alt="servo101-4.png" />
 </p>
 </div></li>

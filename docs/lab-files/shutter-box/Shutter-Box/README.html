@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shutter Box</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Shutter Box</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3b33334">Key Features</a></li>
+<li><a href="#org2022430">Waterjet + Box Assembly instructions</a></li>
+<li><a href="#org2024f3c">Electrical assembly instructions</a></li>
+<li><a href="#org609d04b">Front Panel</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3b33334" class="outline-2">
+<h2 id="org3b33334">Key Features</h2>
+<div class="outline-text-2" id="text-org3b33334">
+<p>
+This box contains two LM YN 4-Channel solid state relays. The relays require 5 V, and  each have four (3.3 V or 5 V) trigger signal inputs and four corresponding dry node switch outputs.
+</p>
+
+<p>
+In the box, we have configured the both relays and their switch outputs to be powered off the same 5 V input, for use with these shutters <a href="https://github.com/MIT-CUA/mini_shutter">https://github.com/MIT-CUA/mini_shutter</a>. On each switch we have added a flyback diode allowing the this box to be used with inductive loads.
+</p>
+
+<p>
+The front panel of the box is arranged such that each adjacent pair of isolating and non-isolating BNC connectors connects to the trigger signal input and corresponding switch on the relay.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2022430" class="outline-2">
+<h2 id="org2022430">Waterjet + Box Assembly instructions</h2>
+<div class="outline-text-2" id="text-org2022430">
+<p>
+Waterjet the front panel. Due to the length of the front panel, the right and left sides needed to be waterjet one at a time.  The waterjet files are located in the FrAg Box:
+\FrAg\CAD\Electronics\CAD\Electronics\Shutter Box\Waterjet
+</p>
+<ul class="org-ul">
+<li>Front Panel-2<sub>imported</sub><sub>DXF</sub><sub>right.dxf</sub></li>
+<li>Front Panel-2<sub>imported</sub><sub>DXF</sub><sub>right.omx</sub></li>
+<li>Front Panel-2<sub>imported</sub><sub>DXF</sub><sub>left.dxf</sub></li>
+<li>Front Panel-2<sub>imported</sub><sub>DXF</sub><sub>left.omx</sub></li>
+<li>Front Panel-2.DXF</li>
+</ul>
+
+<p>
+Waterjet the two blocks for the relays to sit on. The waterjet files are located in the FrAg Box:
+\FrAg\CAD\Electronics\CAD\Electronics\Shutter Box\Waterjet
+</p>
+<ul class="org-ul">
+<li>block<sub>imported</sub><sub>DXF.dxf</sub></li>
+<li>block<sub>imported</sub><sub>DXF.omx</sub></li>
+</ul>
+<p>
+Tap all holes for 4-40.
+</p>
+
+<p>
+Assemble the box according to the box's assembly manual.
+</p>
+
+<p>
+Epoxy the two blocks to the bottom of the box and screw down the relays onto the nylon spacers.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2024f3c" class="outline-2">
+<h2 id="org2024f3c">Electrical assembly instructions</h2>
+<div class="outline-text-2" id="text-org2024f3c">
+<ol class="org-ol">
+<li>Connect to DC+ and DC- on each relay to the banana connectors on the front panel.</li>
+<li>Connect the eight non-isolating BNC connectors to X1-4 on each.</li>
+<li>Ground the box itself and connect the ground of the non-isolating BNC connectors to XM.</li>
+<li>Short DC+ to on of the screw terminals for each of the switches.</li>
+<li>Connect the other screw terminal on each switch to the isolating BNC connectors</li>
+<li>Connect the ground of each of the isolating BNC connectors to DC- on the relay</li>
+<li>Add the diodes recommended in figures 5 and 6 in the relay manual</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org609d04b" class="outline-2">
+<h2 id="org609d04b">Front Panel</h2>
+<div class="outline-text-2" id="text-org609d04b">
+<p>
+The front panel contains
+</p>
+<ul class="org-ul">
+<li>x2 banana jacks (+5V, GND)</li>
+<li>8 isolating BNC panel mounts</li>
+<li>8 non-isolating BNC panel mounts</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.6.15)</p>
+</div>
+</body>
+</html>
